@@ -49,8 +49,8 @@ public class HudRenderer {
             Vec3d coord
     ) {
         renderSectionedHUD(context, List.of(
-                new DisplaySection("Loaded Chunks", totalEntryList),
-                new DisplaySection("Current Chunk", chunkEntryList)
+                new DisplaySection("Current Chunk", chunkEntryList),
+                new DisplaySection("Loaded Chunks", totalEntryList)
         ), coord);
     }
 

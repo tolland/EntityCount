@@ -61,10 +61,12 @@ public class CountEntityEvent{
             return;
         }
 
-        targetMap.addTo(new ExtendString(className, DisplayEntryEntityType.NORMAL), 1);
         if (entity instanceof LivingEntity livingEntity) {
             String ageSuffix = livingEntity.isBaby() ? " [baby]" : " [adult]";
             targetMap.addTo(new ExtendString(className + ageSuffix, DisplayEntryEntityType.NORMAL), 1);
+            return;
         }
+
+        targetMap.addTo(new ExtendString(className, DisplayEntryEntityType.NORMAL), 1);
     }
 }
